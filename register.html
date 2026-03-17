@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EduAI — Ro'yxatdan o'ting va bepul sinov davrini boshlang.">
+    <title>EduAI — Ro'yxatdan o'tish</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body class="register-body">
+
+    <div class="register-page">
+
+        <!-- Left: Visual Panel -->
+        <div class="register-visual">
+            <div class="register-visual-bg">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+            </div>
+            <div class="register-visual-content">
+                <a href="index.html" class="nav-logo register-logo">
+                    <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="url(#logoGradR)"/>
+                        <path d="M10 22V10h5c1.1 0 2 .2 2.7.7.7.4 1.3 1 1.6 1.8.4.8.6 1.6.6 2.5s-.2 1.7-.6 2.5c-.3.8-.9 1.4-1.6 1.8-.7.5-1.6.7-2.7.7h-2.5V22H10zm2.5-4.5H15c.6 0 1.1-.1 1.5-.4.4-.3.7-.6.9-1.1.2-.4.3-1 .3-1.5s-.1-1-.3-1.5c-.2-.4-.5-.8-.9-1.1-.4-.3-.9-.4-1.5-.4h-2.5v6z" fill="white"/>
+                        <defs><linearGradient id="logoGradR" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
+                    </svg>
+                    <span>EduAI</span>
+                </a>
+                <div class="register-visual-text">
+                    <h2>Ta'limning yangi davri boshlanmoqda</h2>
+                    <p>Sun'iy intellekt yordamida har bir o'quvchiga individual ta'lim. Bepul sinov davridan foydalaning.</p>
+                </div>
+                <div class="register-features-mini">
+                    <div class="register-feature-mini">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span>7 kunlik bepul sinov</span>
+                    </div>
+                    <div class="register-feature-mini">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span>To'lov ma'lumotlari shart emas</span>
+                    </div>
+                    <div class="register-feature-mini">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span>Istalgan vaqtda bekor qilish</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Form Panel -->
+        <div class="register-form-panel">
+            <div class="register-form-wrap">
+
+                <div class="register-form-header">
+                    <h1>Ro'yxatdan o'tish</h1>
+                    <p>Hisobingizni yarating va o'rganishni boshlang</p>
+                </div>
+
+                <form class="register-form" id="registerForm">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Ism</label>
+                            <div class="input-wrap">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                <input type="text" id="firstName" placeholder="Ismingiz" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Familiya</label>
+                            <div class="input-wrap">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                <input type="text" id="lastName" placeholder="Familiyangiz" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefon raqam</label>
+                        <div class="input-wrap">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <input type="tel" id="phone" placeholder="+998 90 123 45 67" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email (ixtiyoriy)</label>
+                        <div class="input-wrap">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <input type="email" id="email" placeholder="email@example.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">Kim sifatida foydalanasiz?</label>
+                        <div class="role-selector">
+                            <label class="role-option">
+                                <input type="radio" name="role" value="student" checked>
+                                <div class="role-card">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                                    <span>O'quvchi</span>
+                                </div>
+                            </label>
+                            <label class="role-option">
+                                <input type="radio" name="role" value="parent">
+                                <div class="role-card">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                    <span>Ota-ona</span>
+                                </div>
+                            </label>
+                            <label class="role-option">
+                                <input type="radio" name="role" value="teacher">
+                                <div class="role-card">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                    <span>O'qituvchi</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Parol</label>
+                        <div class="input-wrap">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            <input type="password" id="password" placeholder="Kamida 8 belgi" required>
+                            <button type="button" class="toggle-pass" id="togglePass" aria-label="Parolni ko'rsatish">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <span>Ro'yxatdan o'tish</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </button>
+
+                    <p class="form-terms">Ro'yxatdan o'tish orqali siz <a href="#">Foydalanish shartlari</a> va <a href="#">Maxfiylik siyosati</a>ga rozilik bildirasiz.</p>
+
+                </form>
+
+                <div class="register-login-link">
+                    <span>Hisobingiz bormi?</span>
+                    <a href="#">Kirish</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Toggle password
+        const togglePass = document.getElementById('togglePass');
+        const passwordInput = document.getElementById('password');
+        if (togglePass) {
+            togglePass.addEventListener('click', () => {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+            });
+        }
+
+        // Form submit -> go to role-specific dashboard
+        const registerForm = document.getElementById('registerForm');
+        registerForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const firstName = document.getElementById('firstName').value;
+            const role = document.querySelector('input[name="role"]:checked').value;
+            
+            if (firstName) {
+                localStorage.setItem('eduai_user', firstName);
+            }
+            localStorage.setItem('eduai_role', role);
+
+            const btn = document.getElementById('submitBtn');
+            btn.innerHTML = '<span>Yuklanmoqda...</span>';
+            btn.style.opacity = '0.7';
+
+            setTimeout(() => {
+                if (role === 'student') {
+                    window.location.href = 'dashboard.html';
+                } else if (role === 'parent') {
+                    window.location.href = 'dashboard-parent.html';
+                } else if (role === 'teacher') {
+                    window.location.href = 'dashboard-teacher.html';
+                }
+            }, 1200);
+        });
+    </script>
+</body>
+</html>

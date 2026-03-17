@@ -1,0 +1,342 @@
+/* =============================================
+   EduAI — Register Page Styles
+   ============================================= */
+
+.register-body {
+    min-height: 100vh;
+    background: var(--color-bg);
+    overflow: hidden;
+}
+
+.register-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+/* --- Left Visual --- */
+.register-visual {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    background: linear-gradient(135deg, #0c0e2b 0%, #1a1045 50%, #0f1035 100%);
+    overflow: hidden;
+}
+
+.register-visual-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.register-visual-bg .orb-1 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(99,102,241,0.4) 0%, transparent 70%);
+    top: -10%;
+    left: -10%;
+}
+
+.register-visual-bg .orb-2 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(139,92,246,0.3) 0%, transparent 70%);
+    bottom: -5%;
+    right: -5%;
+}
+
+.register-visual-content {
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+}
+
+.register-logo {
+    margin-bottom: 48px;
+}
+
+.register-visual-text h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+}
+
+.register-visual-text p {
+    font-size: 16px;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.register-features-mini {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.register-feature-mini {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.register-feature-mini svg {
+    color: #34d399;
+    flex-shrink: 0;
+}
+
+/* --- Right Form --- */
+.register-form-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: var(--color-bg);
+    overflow-y: auto;
+}
+
+.register-form-wrap {
+    width: 100%;
+    max-width: 440px;
+}
+
+.register-form-header {
+    margin-bottom: 36px;
+}
+
+.register-form-header h1 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+}
+
+.register-form-header p {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+}
+
+/* --- Form Elements --- */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    letter-spacing: 0.02em;
+}
+
+.input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 0 14px;
+    transition: var(--transition);
+}
+
+.input-wrap:focus-within {
+    border-color: rgba(99,102,241,0.5);
+    background: rgba(99,102,241,0.04);
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
+}
+
+.input-wrap svg {
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+}
+
+.input-wrap input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent !important;
+    font-family: var(--font);
+    font-size: 14px;
+    color: #fff !important;
+    padding: 14px 0;
+}
+
+.input-wrap input::placeholder {
+    color: var(--color-text-muted);
+}
+
+/* Autofill Fix */
+.input-wrap input:-webkit-autofill,
+.input-wrap input:-webkit-autofill:hover, 
+.input-wrap input:-webkit-autofill:focus, 
+.input-wrap input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px #0c0e2b inset !important;
+    -webkit-text-fill-color: #fff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.toggle-pass {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    padding: 4px;
+    display: flex;
+    transition: var(--transition);
+}
+
+.toggle-pass:hover {
+    color: var(--color-text);
+}
+
+/* Role Selector */
+.role-selector {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.role-option {
+    cursor: pointer;
+}
+
+.role-option input[type="radio"] {
+    display: none;
+}
+
+.role-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 12px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.role-card svg {
+    color: var(--color-text-muted);
+    transition: var(--transition);
+}
+
+.role-card span {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    transition: var(--transition);
+}
+
+.role-option input[type="radio"]:checked + .role-card {
+    background: rgba(99,102,241,0.1);
+    border-color: rgba(99,102,241,0.4);
+    box-shadow: 0 0 0 2px rgba(99,102,241,0.15);
+}
+
+.role-option input[type="radio"]:checked + .role-card svg {
+    color: var(--color-primary-light);
+}
+
+.role-option input[type="radio"]:checked + .role-card span {
+    color: #fff;
+}
+
+.role-card:hover {
+    border-color: rgba(99,102,241,0.25);
+    background: rgba(99,102,241,0.06);
+}
+
+/* Submit */
+.btn-full {
+    width: 100%;
+    justify-content: center;
+    padding: 16px;
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+.form-terms {
+    font-size: 12px;
+    color: var(--color-text-muted);
+    text-align: center;
+    line-height: 1.6;
+}
+
+.form-terms a {
+    color: var(--color-primary-light);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.form-terms a:hover {
+    color: #fff;
+}
+
+.register-login-link {
+    text-align: center;
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--color-border);
+    font-size: 14px;
+    color: var(--color-text-muted);
+}
+
+.register-login-link a {
+    color: var(--color-primary-light);
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+.register-login-link a:hover {
+    color: #fff;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+    .register-page {
+        grid-template-columns: 1fr;
+    }
+
+    .register-visual {
+        display: none;
+    }
+
+    .register-form-panel {
+        padding: 32px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .role-selector {
+        grid-template-columns: 1fr;
+    }
+}

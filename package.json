@@ -1,0 +1,15 @@
+{
+  "name": "eduai-platform",
+  "version": "1.0.0",
+  "description": "EduAI - AI Powered Educational Platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 5000 .",
+    "dev": "npx live-server --port=5000 ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^14.2.1",
+    "live-server": "^1.2.2"
+  }
+}
