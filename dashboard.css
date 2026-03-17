@@ -501,6 +501,91 @@ input:focus, select:focus, textarea:focus, button:focus {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+#subjectChatForm {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 8px 16px;
+    transition: 0.3s;
+}
+
+#subjectChatForm:focus-within {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.1);
+}
+
+#subjectChatInput {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding: 8px 0;
+    font-family: inherit;
+    font-size: 14px;
+    resize: none;
+    max-height: 150px;
+}
+
+#subjectChatForm button {
+    background: var(--color-primary);
+    color: #fff;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    flex-shrink: 0;
+    margin-bottom: 2px;
+}
+
+#subjectChatForm button:hover {
+    transform: scale(1.05);
+    background: #4f46e5;
+}
+
+.chat-messages .message {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-messages .message.user {
+    align-items: flex-end;
+}
+
+.chat-messages .message.bot {
+    align-items: flex-start;
+}
+
+.chat-messages .bubble {
+    max-width: 80%;
+    padding: 12px 18px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.chat-messages .message.user .bubble {
+    background: var(--color-primary);
+    color: #fff;
+    border-bottom-right-radius: 4px;
+}
+
+.chat-messages .message.bot .bubble {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom-left-radius: 4px;
+}
+
 /* --- To-Do List Styles --- */
 .todo-section {
     margin-top: 24px;
